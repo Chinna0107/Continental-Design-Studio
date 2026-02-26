@@ -1,33 +1,52 @@
 import { useState } from 'react';
+import project1Main from '../assets/ProjectOne/project1.jpeg';
+import project1Img2 from '../assets/ProjectOne/img2.jpeg';
+import project1Img3 from '../assets/ProjectOne/img3.jpeg';
+import project1Img4 from '../assets/ProjectOne/img4.jpeg';
+import project1Img5 from '../assets/ProjectOne/img5.jpeg';
+import project1Img6 from '../assets/ProjectOne/img6.jpeg';
+
+import project2Img1 from '../assets/ProjectTwo/img1.jpeg';
+import project2Img2 from '../assets/ProjectTwo/img2.jpeg';
+
+import project3Img1 from '../assets/ProjectThree/img1.jpeg';
+import project3Img2 from '../assets/ProjectThree/img2.jpeg';
+import project3Img3 from '../assets/ProjectThree/img3.jpeg';
+import project3Img4 from '../assets/ProjectThree/img4.jpeg';
+import project3Img5 from '../assets/ProjectThree/img5.jpeg';
+import project3Img6 from '../assets/ProjectThree/img6.jpeg';
+
+import project4Img1 from '../assets/ProjectFour/img1.jpeg';
+import project4Img2 from '../assets/ProjectFour/img2.jpeg';
+import project4Img3 from '../assets/ProjectFour/img3.jpeg';
+import project4Img4 from '../assets/ProjectFour/img4.jpeg';
+import project4Img5 from '../assets/ProjectFour/img5.jpeg';
+import project4Img6 from '../assets/ProjectFour/img6.jpeg';
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const projects = [
-    { id: 1, category: 'Commercial', name: 'Akshara Theatre', img: 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=800&q=80', span: 'tall' },
-    { id: 2, category: 'Interior', name: 'Luxury Residence', img: 'https://images.unsplash.com/photo-1600210492493-0946911123ea?w=800&q=80', span: 'wide' },
-    { id: 3, category: 'Architectural', name: 'Modern Villa', img: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80', span: 'normal' },
-    { id: 4, category: 'Commercial', name: 'Tech Hub Office', img: 'https://images.unsplash.com/photo-1497366811353-6870744d04b2?w=800&q=80', span: 'normal' },
-    { id: 5, category: 'Interior', name: 'Penthouse Suite', img: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=800&q=80', span: 'tall' },
-    { id: 6, category: 'Architectural', name: 'Corporate HQ', img: 'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80', span: 'wide' },
-    { id: 7, category: 'Commercial', name: 'Retail Complex', img: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80', span: 'normal' },
-    { id: 8, category: 'Interior', name: 'Boutique Hotel', img: 'https://images.unsplash.com/photo-1566073771259-6a8506099945?w=800&q=80', span: 'big' },
-    { id: 9, category: 'Architectural', name: 'Residential Tower', img: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80', span: 'normal' },
-    { id: 10, category: 'Commercial', name: 'Shopping Mall', img: 'https://images.unsplash.com/photo-1519567241046-7f570eee3ce6?w=800&q=80', span: 'tall' },
-    { id: 11, category: 'Interior', name: 'Executive Office', img: 'https://images.unsplash.com/photo-1497366412874-3415097a27e7?w=800&q=80', span: 'normal' },
-    { id: 12, category: 'Architectural', name: 'Urban Complex', img: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80', span: 'wide' },
-    { id: 13, category: 'Interior', name: 'Minimalist Loft', img: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?w=800&q=80', span: 'normal' },
-    { id: 14, category: 'Commercial', name: 'Business Center', img: 'https://images.unsplash.com/photo-1486325212027-8081e485255e?w=800&q=80', span: 'tall' },
-    { id: 15, category: 'Architectural', name: 'Glass Pavilion', img: 'https://images.unsplash.com/photo-1511818966892-d7d671e672a2?w=800&q=80', span: 'wide' },
-    { id: 16, category: 'Interior', name: 'Contemporary Living', img: 'https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?w=800&q=80', span: 'normal' },
-    { id: 17, category: 'Commercial', name: 'Flagship Store', img: 'https://images.unsplash.com/photo-1528698827591-e19ccd7bc23d?w=800&q=80', span: 'normal' },
-    { id: 18, category: 'Architectural', name: 'Skyline Tower', img: 'https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b?w=800&q=80', span: 'tall' },
-    { id: 19, category: 'Interior', name: 'Designer Kitchen', img: 'https://images.unsplash.com/photo-1556912173-3bb406ef7e77?w=800&q=80', span: 'wide' },
-    { id: 20, category: 'Commercial', name: 'Co-Working Space', img: 'https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=800&q=80', span: 'normal' },
-    { id: 21, category: 'Architectural', name: 'Heritage Restoration', img: 'https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80', span: 'big' },
-    { id: 22, category: 'Interior', name: 'Master Bedroom Suite', img: 'https://images.unsplash.com/photo-1616594039964-ae9021a400a0?w=800&q=80', span: 'normal' },
-    { id: 23, category: 'Commercial', name: 'Restaurant Design', img: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&q=80', span: 'wide' },
-    { id: 24, category: 'Architectural', name: 'Waterfront Complex', img: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80', span: 'tall' }
+    { id: 1, category: 'Commercial', name: 'Sandeep Associates', img: project1Main, span: 'tall' },
+    { id: 2, category: 'Commercial', name: 'Sandeep Associates', img: project1Img2, span: 'wide' },
+    { id: 3, category: 'Commercial', name: 'Sandeep Associates', img: project1Img3, span: 'normal' },
+    { id: 4, category: 'Commercial', name: 'Sandeep Associates', img: project1Img4, span: 'normal' },
+    { id: 5, category: 'Commercial', name: 'Sandeep Associates', img: project1Img5, span: 'tall' },
+    { id: 6, category: 'Commercial', name: 'Sandeep Associates', img: project1Img6, span: 'wide' },
+    { id: 7, category: 'Interior', name: 'Sri Manikanta Vehicle Finance', img: project2Img1, span: 'normal' },
+    { id: 8, category: 'Interior', name: 'Sri Manikanta Vehicle Finance', img: project2Img2, span: 'big' },
+    { id: 9, category: 'Architectural', name: 'Modern Office Space', img: project3Img1, span: 'normal' },
+    { id: 10, category: 'Architectural', name: 'Modern Office Space', img: project3Img2, span: 'tall' },
+    { id: 11, category: 'Architectural', name: 'Modern Office Space', img: project3Img3, span: 'normal' },
+    { id: 12, category: 'Architectural', name: 'Modern Office Space', img: project3Img4, span: 'wide' },
+    { id: 13, category: 'Architectural', name: 'Modern Office Space', img: project3Img5, span: 'normal' },
+    { id: 14, category: 'Architectural', name: 'Modern Office Space', img: project3Img6, span: 'tall' },
+    { id: 15, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img1, span: 'wide' },
+    { id: 16, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img2, span: 'normal' },
+    { id: 17, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img3, span: 'normal' },
+    { id: 18, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img4, span: 'tall' },
+    { id: 19, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img5, span: 'wide' },
+    { id: 20, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img6, span: 'normal' }
   ];
 
   const filteredProjects = activeFilter === 'All' 

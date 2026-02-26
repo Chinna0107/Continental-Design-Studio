@@ -32,7 +32,7 @@ const Contact = () => {
             <div style={{ padding: '1.5rem', backgroundColor: 'transparent', borderRadius: '12px', border: '2px solid transparent', transition: 'all 0.3s' }} onMouseOver={(e) => { e.currentTarget.style.border = '2px solid #c1a96c'; e.currentTarget.style.backgroundColor = 'rgba(193, 169, 108, 0.05)'; }} onMouseOut={(e) => { e.currentTarget.style.border = '2px solid transparent'; e.currentTarget.style.backgroundColor = 'transparent'; }}>
               <h3 style={{ color: '#c1a96c', fontSize: '1.1rem', fontWeight: '700', marginBottom: '1rem', letterSpacing: '0.5px', display: 'flex', alignItems: 'center', gap: '0.5rem' }}><span>📍</span> Design Studio</h3>
               <p style={{ color: '#555', lineHeight: '1.8', marginBottom: '1rem', fontSize: '0.9rem' }}>Gaddalamanagar, Morampudi, Rajahmundry - 533101, AP</p>
-              <a href="https://maps.google.com" target="_blank" rel="noopener noreferrer" style={{ color: '#c1a96c', fontWeight: '700', textDecoration: 'none', fontSize: '0.9rem', transition: 'all 0.3s', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }} onMouseOver={(e) => e.target.style.gap = '1rem'} onMouseOut={(e) => e.target.style.gap = '0.5rem'}>Get Directions <span>→</span></a>
+              <a href="https://maps.app.goo.gl/kv2HT2WCUAHGRX7CA" target="_blank" rel="noopener noreferrer" style={{ color: '#c1a96c', fontWeight: '700', textDecoration: 'none', fontSize: '0.9rem', transition: 'all 0.3s', display: 'inline-flex', alignItems: 'center', gap: '0.5rem' }} onMouseOver={(e) => e.target.style.gap = '1rem'} onMouseOut={(e) => e.target.style.gap = '0.5rem'}>Get Directions <span>→</span></a>
             </div>
 
             {/* Direct Connect */}
