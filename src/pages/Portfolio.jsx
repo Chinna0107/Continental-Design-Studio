@@ -1,52 +1,21 @@
 import { useState } from 'react';
-import project1Main from '../assets/ProjectOne/project1.jpeg';
-import project1Img2 from '../assets/ProjectOne/img2.jpeg';
-import project1Img3 from '../assets/ProjectOne/img3.jpeg';
-import project1Img4 from '../assets/ProjectOne/img4.jpeg';
-import project1Img5 from '../assets/ProjectOne/img5.jpeg';
-import project1Img6 from '../assets/ProjectOne/img6.jpeg';
-
-import project2Img1 from '../assets/ProjectTwo/img1.jpeg';
-import project2Img2 from '../assets/ProjectTwo/img2.jpeg';
-
-import project3Img1 from '../assets/ProjectThree/img1.jpeg';
-import project3Img2 from '../assets/ProjectThree/img2.jpeg';
-import project3Img3 from '../assets/ProjectThree/img3.jpeg';
-import project3Img4 from '../assets/ProjectThree/img4.jpeg';
-import project3Img5 from '../assets/ProjectThree/img5.jpeg';
-import project3Img6 from '../assets/ProjectThree/img6.jpeg';
-
-import project4Img1 from '../assets/ProjectFour/img1.jpeg';
-import project4Img2 from '../assets/ProjectFour/img2.jpeg';
-import project4Img3 from '../assets/ProjectFour/img3.jpeg';
-import project4Img4 from '../assets/ProjectFour/img4.jpeg';
-import project4Img5 from '../assets/ProjectFour/img5.jpeg';
-import project4Img6 from '../assets/ProjectFour/img6.jpeg';
 
 const Portfolio = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
   const projects = [
-    { id: 1, category: 'Commercial', name: 'Sandeep Associates', img: project1Main, span: 'tall' },
-    { id: 2, category: 'Commercial', name: 'Sandeep Associates', img: project1Img2, span: 'wide' },
-    { id: 3, category: 'Commercial', name: 'Sandeep Associates', img: project1Img3, span: 'normal' },
-    { id: 4, category: 'Commercial', name: 'Sandeep Associates', img: project1Img4, span: 'normal' },
-    { id: 5, category: 'Commercial', name: 'Sandeep Associates', img: project1Img5, span: 'tall' },
-    { id: 6, category: 'Commercial', name: 'Sandeep Associates', img: project1Img6, span: 'wide' },
-    { id: 7, category: 'Interior', name: 'Sri Manikanta Vehicle Finance', img: project2Img1, span: 'normal' },
-    { id: 8, category: 'Interior', name: 'Sri Manikanta Vehicle Finance', img: project2Img2, span: 'big' },
-    { id: 9, category: 'Architectural', name: 'Modern Office Space', img: project3Img1, span: 'normal' },
-    { id: 10, category: 'Architectural', name: 'Modern Office Space', img: project3Img2, span: 'tall' },
-    { id: 11, category: 'Architectural', name: 'Modern Office Space', img: project3Img3, span: 'normal' },
-    { id: 12, category: 'Architectural', name: 'Modern Office Space', img: project3Img4, span: 'wide' },
-    { id: 13, category: 'Architectural', name: 'Modern Office Space', img: project3Img5, span: 'normal' },
-    { id: 14, category: 'Architectural', name: 'Modern Office Space', img: project3Img6, span: 'tall' },
-    { id: 15, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img1, span: 'wide' },
-    { id: 16, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img2, span: 'normal' },
-    { id: 17, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img3, span: 'normal' },
-    { id: 18, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img4, span: 'tall' },
-    { id: 19, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img5, span: 'wide' },
-    { id: 20, category: 'Commercial', name: 'Luxury Villa Estate', img: project4Img6, span: 'normal' }
+    { id: 1, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107965/project1_w8x01s.jpg', span: 'tall' },
+    { id: 2, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107974/img2_c2atil.jpg', span: 'wide' },
+    { id: 3, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107949/img6_tyaq9m.jpg', span: 'normal' },
+    { id: 4, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107936/img10_p9xrmd.jpg', span: 'normal' },
+    { id: 5, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107959/img5_qzgygu.jpg', span: 'tall' },
+    { id: 6, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107991/img4_eqfspy.jpg', span: 'wide' },
+    { id: 7, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108025/img1_fkgxy7.jpg', span: 'normal' },
+    { id: 8, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108004/img5_nzr4tf.jpg', span: 'big' },
+    { id: 9, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108033/img2_kwa5ue.jpg', span: 'normal' },
+    { id: 10, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108046/img4_cyllbb.jpg', span: 'tall' },
+    { id: 11, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108061/img5_zqccfk.jpg', span: 'normal' },
+    { id: 12, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108066/img6_dbna5u.jpg', span: 'wide' }
   ];
 
   const filteredProjects = activeFilter === 'All' 

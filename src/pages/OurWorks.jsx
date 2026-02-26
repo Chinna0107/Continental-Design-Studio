@@ -1,27 +1,4 @@
 import { Link } from 'react-router-dom';
-import project1Main from '../assets/ProjectOne/project1.jpeg';
-import project1Img2 from '../assets/ProjectOne/img2.jpeg';
-import project1Img3 from '../assets/ProjectOne/img3.jpeg';
-import project1Img4 from '../assets/ProjectOne/img4.jpeg';
-import project1Img5 from '../assets/ProjectOne/img5.jpeg';
-import project1Img6 from '../assets/ProjectOne/img6.jpeg';
-
-import project2Img1 from '../assets/ProjectTwo/img1.jpeg';
-import project2Img2 from '../assets/ProjectTwo/img2.jpeg';
-
-import project3Img1 from '../assets/ProjectThree/img1.jpeg';
-import project3Img2 from '../assets/ProjectThree/img2.jpeg';
-import project3Img3 from '../assets/ProjectThree/img3.jpeg';
-import project3Img4 from '../assets/ProjectThree/img4.jpeg';
-import project3Img5 from '../assets/ProjectThree/img5.jpeg';
-import project3Img6 from '../assets/ProjectThree/img6.jpeg';
-
-import project4Img1 from '../assets/ProjectFour/img1.jpeg';
-import project4Img2 from '../assets/ProjectFour/img2.jpeg';
-import project4Img3 from '../assets/ProjectFour/img3.jpeg';
-import project4Img4 from '../assets/ProjectFour/img4.jpeg';
-import project4Img5 from '../assets/ProjectFour/img5.jpeg';
-import project4Img6 from '../assets/ProjectFour/img6.jpeg';
 
 const OurWorks = () => {
   const projects = [
@@ -34,47 +11,33 @@ const OurWorks = () => {
       desc: 'A state-of-the-art cinematic destination that blends advanced acoustics with a luxury boutique aesthetic.', 
       style: 'Acoustic Modernism', 
       scope: 'Architectural & Interiors', 
-      img: project1Main,
-      details: [project1Img2, project1Img3, project1Img4, project1Img5, project1Img6],
+      img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107965/project1_w8x01s.jpg',
+      details: [
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107974/img2_c2atil.jpg',
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107949/img6_tyaq9m.jpg',
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107936/img10_p9xrmd.jpg',
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107959/img5_qzgygu.jpg',
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107991/img4_eqfspy.jpg'
+      ],
       bg: '#fff' 
     },
     { 
       id: 2, 
       category: 'Renders', 
-      name: 'Sri Manikanta Vehicle Finance Office ', 
-      location: 'Luxury Residential', 
+      name: ' Finance Office ', 
+      location: 'RavulaPalem', 
       year: '2023', 
       desc: 'A private high-end residence focused on open-plan living and premium material curation.', 
       style: 'Contemporary Chic', 
       scope: 'Bespoke Interiors', 
-      img: project2Img1,
-      details: [project2Img2],
-      bg: '#f9f9f9' 
-    },
-    { 
-      id: 3, 
-      category: 'Commercial', 
-      name: 'Tech Hub Office', 
-      location: 'Hyderabad', 
-      year: '2024', 
-      desc: 'Modern workspace designed for collaboration and innovation with sustainable materials.', 
-      style: 'Industrial Modern', 
-      scope: 'Full Architecture', 
-      img: project3Img1,
-      details: [project3Img2, project3Img3, project3Img4, project3Img5, project3Img6],
-      bg: '#fff' 
-    },
-    { 
-      id: 4, 
-      category: 'Residential', 
-      name: 'Luxury Villa Estate', 
-      location: 'Bangalore', 
-      year: '2023', 
-      desc: 'Expansive villa with infinity pool and panoramic city views.', 
-      style: 'Tropical Luxury', 
-      scope: 'Architecture & Landscape', 
-      img: project4Img1,
-      details: [project4Img2, project4Img3, project4Img4, project4Img5, project4Img6],
+      img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108025/img1_fkgxy7.jpg',
+      details: [
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108004/img5_nzr4tf.jpg',
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108033/img2_kwa5ue.jpg',
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108046/img4_cyllbb.jpg',
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108061/img5_zqccfk.jpg',
+        'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108066/img6_dbna5u.jpg'
+      ],
       bg: '#f9f9f9' 
     }
   ];
@@ -100,11 +63,13 @@ const OurWorks = () => {
               <>
                 <div style={{ position: 'relative' }} className="scale-in stagger-1">
                   <img src={project.img} alt={project.name} style={{ width: '100%', height: '600px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 20px 60px rgba(0,0,0,0.15)', transition: 'all 0.4s ease', cursor: 'pointer' }} onMouseOver={(e) => { e.target.style.transform = 'scale(1.02)'; e.target.style.boxShadow = '0 25px 70px rgba(193, 169, 108, 0.3)'; }} onMouseOut={(e) => { e.target.style.transform = 'scale(1)'; e.target.style.boxShadow = '0 20px 60px rgba(0,0,0,0.15)'; }} />
-                  <div style={{ position: 'absolute', bottom: '-50px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '1rem', width: '90%' }}>
-                    {project.details.map((detailImg, idx) => (
-                      <img key={idx} src={detailImg} alt={`Detail ${idx + 1}`} style={{ width: '20%', height: '120px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 10px 30px rgba(0,0,0,0.2)', border: '3px solid #fff', transition: 'all 0.3s ease', cursor: 'pointer' }} onMouseOver={(e) => { e.target.style.transform = 'translateY(-10px) scale(1.05)'; e.target.style.boxShadow = '0 15px 40px rgba(193, 169, 108, 0.4)'; }} onMouseOut={(e) => { e.target.style.transform = 'translateY(0) scale(1)'; e.target.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)'; }} />
-                    ))}
-                  </div>
+                  {project.details.length > 0 && (
+                    <div style={{ position: 'absolute', bottom: '-50px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '1rem', width: '90%', justifyContent: 'center' }}>
+                      {project.details.map((detailImg, idx) => (
+                        <img key={idx} src={detailImg} alt={`Detail ${idx + 1}`} style={{ flex: '1', maxWidth: '20%', height: '120px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 10px 30px rgba(0,0,0,0.2)', border: '3px solid #fff', transition: 'all 0.3s ease', cursor: 'pointer' }} onMouseOver={(e) => { e.target.style.transform = 'translateY(-10px) scale(1.05)'; e.target.style.boxShadow = '0 15px 40px rgba(193, 169, 108, 0.4)'; }} onMouseOut={(e) => { e.target.style.transform = 'translateY(0) scale(1)'; e.target.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)'; }} />
+                      ))}
+                    </div>
+                  )}
                 </div>
                 <div className="fade-in-right stagger-2">
                   <p style={{ color: '#c1a96c', fontSize: '0.9rem', fontWeight: '700', letterSpacing: '2px', textTransform: 'uppercase', marginBottom: '1rem' }}>{project.category}</p>
@@ -135,11 +100,13 @@ const OurWorks = () => {
                 </div>
                 <div style={{ position: 'relative' }} className="scale-in stagger-1">
                   <img src={project.img} alt={project.name} style={{ width: '100%', height: '600px', objectFit: 'cover', borderRadius: '20px', boxShadow: '0 20px 60px rgba(0,0,0,0.15)', transition: 'all 0.4s ease', cursor: 'pointer' }} onMouseOver={(e) => { e.target.style.transform = 'scale(1.02)'; e.target.style.boxShadow = '0 25px 70px rgba(193, 169, 108, 0.3)'; }} onMouseOut={(e) => { e.target.style.transform = 'scale(1)'; e.target.style.boxShadow = '0 20px 60px rgba(0,0,0,0.15)'; }} />
-                  <div style={{ position: 'absolute', bottom: '-50px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '1rem', width: '90%' }}>
-                    {project.details.map((detailImg, idx) => (
-                      <img key={idx} src={detailImg} alt={`Detail ${idx + 1}`} style={{ width: '20%', height: '120px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 10px 30px rgba(0,0,0,0.2)', border: '3px solid #fff', transition: 'all 0.3s ease', cursor: 'pointer' }} onMouseOver={(e) => { e.target.style.transform = 'translateY(-10px) scale(1.05)'; e.target.style.boxShadow = '0 15px 40px rgba(193, 169, 108, 0.4)'; }} onMouseOut={(e) => { e.target.style.transform = 'translateY(0) scale(1)'; e.target.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)'; }} />
-                    ))}
-                  </div>
+                  {project.details.length > 0 && (
+                    <div style={{ position: 'absolute', bottom: '-50px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '1rem', width: '90%', justifyContent: 'center' }}>
+                      {project.details.map((detailImg, idx) => (
+                        <img key={idx} src={detailImg} alt={`Detail ${idx + 1}`} style={{ flex: '1', maxWidth: '20%', height: '120px', objectFit: 'cover', borderRadius: '10px', boxShadow: '0 10px 30px rgba(0,0,0,0.2)', border: '3px solid #fff', transition: 'all 0.3s ease', cursor: 'pointer' }} onMouseOver={(e) => { e.target.style.transform = 'translateY(-10px) scale(1.05)'; e.target.style.boxShadow = '0 15px 40px rgba(193, 169, 108, 0.4)'; }} onMouseOut={(e) => { e.target.style.transform = 'translateY(0) scale(1)'; e.target.style.boxShadow = '0 10px 30px rgba(0,0,0,0.2)'; }} />
+                      ))}
+                    </div>
+                  )}
                 </div>
               </>
             )}
