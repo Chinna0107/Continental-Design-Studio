@@ -10,12 +10,12 @@ const Portfolio = () => {
     { id: 4, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107936/img10_p9xrmd.jpg', span: 'normal' },
     { id: 5, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107959/img5_qzgygu.jpg', span: 'tall' },
     { id: 6, category: 'Commercial', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772107991/img4_eqfspy.jpg', span: 'wide' },
-    { id: 7, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108025/img1_fkgxy7.jpg', span: 'normal' },
-    { id: 8, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108004/img5_nzr4tf.jpg', span: 'big' },
-    { id: 9, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108033/img2_kwa5ue.jpg', span: 'normal' },
-    { id: 10, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108046/img4_cyllbb.jpg', span: 'tall' },
-    { id: 11, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108061/img5_zqccfk.jpg', span: 'normal' },
-    { id: 12, category: 'Interior', name: 'Finance Office', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108066/img6_dbna5u.jpg', span: 'wide' }
+    { id: 7, category: 'Interior', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108025/img1_fkgxy7.jpg', span: 'normal' },
+    { id: 8, category: 'Interior', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108004/img5_nzr4tf.jpg', span: 'big' },
+    { id: 9, category: 'Interior', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108033/img2_kwa5ue.jpg', span: 'normal' },
+    { id: 10, category: 'Interior', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108046/img4_cyllbb.jpg', span: 'tall' },
+    { id: 11, category: 'Interior', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108061/img5_zqccfk.jpg', span: 'normal' },
+    { id: 12, category: 'Interior', name: 'Sandeep Associates', img: 'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108066/img6_dbna5u.jpg', span: 'wide' }
   ];
 
   const filteredProjects = activeFilter === 'All' 
