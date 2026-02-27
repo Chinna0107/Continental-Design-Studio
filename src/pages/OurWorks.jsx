@@ -39,6 +39,25 @@ const OurWorks = () => {
         'https://res.cloudinary.com/dgyykbmt6/image/upload/v1772108066/img6_dbna5u.jpg'
       ],
       bg: '#f9f9f9' 
+    },
+    { 
+      id: 3, 
+      category: 'On Site', 
+      name: 'Finance Office', 
+      location: 'RavulaPalem', 
+      year: '2024', 
+      desc: 'A modern finance office combining professional workspace design with on-site construction excellence.', 
+      style: 'Modern Professional', 
+      scope: 'Commercial & On-site', 
+      img: 'https://res.cloudinary.com/dokxc6as9/image/upload/v1772172552/img8_wcmxnn.jpg',
+      details: [
+        'https://res.cloudinary.com/dokxc6as9/image/upload/v1772172559/img9_p2wzx6.jpg',
+        'https://res.cloudinary.com/dokxc6as9/image/upload/v1772172538/img6_c38pnf.jpg',
+        'https://res.cloudinary.com/dokxc6as9/image/upload/v1772172440/img6_aurcuq.jpg',
+        'https://res.cloudinary.com/dokxc6as9/image/upload/v1772172416/img2_e8zu56.jpg',
+        'https://res.cloudinary.com/dokxc6as9/image/upload/v1772172406/img1_rgtzvc.jpg'
+      ],
+      bg: '#fff' 
     }
   ];
 
